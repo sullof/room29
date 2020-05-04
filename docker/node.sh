@@ -8,7 +8,7 @@ source .default.env && docker run -d \
   -p 2368:2368 \
   -e url=https://room29.art \
   --restart unless-stopped \
-  -v /vol/log/room-29_app:/var/log/room-29_app \
+  -v $PWD/content:/var/lib/ghost/content \
   -e NODE_ENV=production \
   -e VIRTUAL_HOST=room29.art \
   -e LETSENCRYPT_HOST=room29.art \
