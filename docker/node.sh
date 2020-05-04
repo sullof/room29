@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-docker stop blog-sullo-co
-docker rm blog-sullo-co
+docker stop room-29
+docker rm room-29
 
 source .default.env && docker run -d \
-  --name blog-sullo-co \
+  --name room-29 \
   -p 2368:2368 \
-  -e url=https://blog.francesco.sullo.co \
+  -e url=https://room29.art \
   --restart unless-stopped \
-  -v /vol/log/blog-sullo-co_app:/var/log/blog-sullo-co_app \
+  -v /vol/log/room-29_app:/var/log/room-29_app \
   -e NODE_ENV=production \
-  -e VIRTUAL_HOST=blog.francesco.sullo.co \
-  -e LETSENCRYPT_HOST=blog.francesco.sullo.co \
+  -e VIRTUAL_HOST=room29.art \
+  -e LETSENCRYPT_HOST=room29.art \
   -e LETSENCRYPT_EMAIL=admin@sullo.co \
   ghost
 

@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
-docker stop blog-sullo-co-debug
-docker rm blog-sullo-co-debug
+docker stop room-29-debug
+docker rm room-29-debug
 
-docker stop blog-sullo-co
-docker rm blog-sullo-co
+docker stop room-29
+docker rm room-29
 
 source .default.env && docker run -it \
-  --name blog-sullo-co-debug \
+  --name room-29-debug \
   --link redis-local:redis \
   -p 9050 \
   -v $PWD:/usr/src/app \
-  -v /vol/log/blog-sullo-co_dapp:/var/log/blog-sullo-co_dapp \
+  -v /vol/log/room-29_dapp:/var/log/room-29_dapp \
   -e VIRTUAL_HOST=sullo.co,www.sullo.co,francesco.sullo.co \
   -e LETSENCRYPT_HOST=sullo.co,www.sullo.co,francesco.sullo.co \
   -e LETSENCRYPT_EMAIL=admin@sullo.co \

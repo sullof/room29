@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-host=blog-sullo-co
+host=room-29
 
 if [[ $1 != '' ]]; then
   host=$1
