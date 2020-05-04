@@ -10,6 +10,9 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=448981585116894&autoLogAppEvents=1"></script>
+
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
@@ -114,11 +117,10 @@ into the {body} of the default.hbs template --}}
                 {{> subscribe-form}}
             {{/if}}
 
-            {{!--
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                <div class="fb-comments" data-href="https://room29.art" data-width="100%" data-numposts="5" data-width=""></div>
             </section>
-            --}}
+
 
         </article>
 
