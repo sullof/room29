@@ -1166,10 +1166,16 @@ Usage (In Ghost editor):
     margin: 0 auto !important;
 }
 
+/*.post-full-content blockquote {*/
+/*    margin: 0 0 1.5em;*/
+/*    padding: 0 1.5em;*/
+/*    border-left: color(var(--blue)) 3px solid;*/
+/*}*/
+
 .post-full-content blockquote {
-    margin: 0 0 1.5em;
+    margin: 0 1.4em 1.5em 0;
     padding: 0 1.5em;
-    border-left: color(var(--blue)) 3px solid;
+    border-left: color(var(--lightgrey)) 1px solid;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
