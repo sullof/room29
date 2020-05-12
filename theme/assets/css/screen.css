@@ -1176,6 +1176,7 @@ Usage (In Ghost editor):
     margin: 0 1.4em 1.5em 0;
     padding: 0 1.5em;
     border-left: color(var(--lightgrey)) 1px solid;
+    font-style: italic;
 }
 @media (max-width: 500px) {
     .post-full-content blockquote {
