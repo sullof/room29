@@ -1178,6 +1178,11 @@ Usage (In Ghost editor):
     border-left: color(var(--lightgrey)) 1px solid;
     font-style: italic;
 }
+
+.post-full-content p {
+    text-indent: 1em;
+}
+
 @media (max-width: 500px) {
     .post-full-content blockquote {
         padding: 0 1.3em;
