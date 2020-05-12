@@ -1179,10 +1179,6 @@ Usage (In Ghost editor):
     font-style: italic;
 }
 
-.post-full-content p {
-    text-indent: 1em;
-}
-
 @media (max-width: 500px) {
     .post-full-content blockquote {
         padding: 0 1.3em;
