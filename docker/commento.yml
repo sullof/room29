@@ -7,7 +7,7 @@ services:
       - 8443:443
     environment:
       COMMENTO_ORIGIN: https://commento.room29.art
-      COMMENTO_PORT: 443
+      COMMENTO_PORT: 8443
       COMMENTO_POSTGRES: postgres://postgres:postgres@db:5432/commento?sslmode=disable
 #      COMMENTO_FORBID_NEW_OWNERS: "true"
       VIRTUAL_HOST: commento.room29.art
