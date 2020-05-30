@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+docker stop room-29-dev
+docker rm room-29-dev
+
 source .default.env && docker run -it --rm \
   --name room-29-dev \
   -p 2368:2368 \
